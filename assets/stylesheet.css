@@ -1,0 +1,11 @@
+.dailyCard {
+  background: red;
+  border: 1px solid black;
+  width: calc(20% - 20px);
+  height: 200px;
+  margin: 10px;
+}
+
+.dailyCard .temp {
+  font-size: 22px;
+}
