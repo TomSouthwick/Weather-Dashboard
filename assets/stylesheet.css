@@ -1,11 +1,32 @@
 .dailyCard {
-  background: red;
-  border: 1px solid black;
-  width: calc(20% - 20px);
-  height: 200px;
-  margin: 10px;
+  /* border: 1px solid black; */
+  box-shadow: 3px 8px 13px 2px #9c9797;
+  /* width: calc(20% - 20px); */
+  margin: 5px;
 }
 
-.dailyCard .temp {
-  font-size: 22px;
+.suggestions {
+  margin-top: 20px;
+}
+
+.cityindex {
+  margin-top: 10%;
+}
+.header {
+  background-image: url(./images/anders-jilden-O85h02qZ24w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* width: 100vw; */
+  height: 150px;
+  background-position-y: -360px;
+}
+
+.suggestions button {
+  width: 258px;
+}
+
+.temp,
+#cityWeather,
+#day {
+  text-transform: capitalize;
 }

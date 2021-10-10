@@ -11,20 +11,26 @@
   </head>
 
   <body>
-    <div style="width: 100vw; height: 120px; background-color:blue; color:white;">Weather</div>
+    <div class="header" style="width: 100vw; height: 150px; "></div>
     <div class="container">
-      <div class="row align-items-start">
+      <div class="row align-items-start mt-2">
         <div class="col-4">
-          <input id="cityIndex" type="text" />
-          <button onclick="searchForCity()">Search</button>
+          <form onsubmit="searchForCity(event);">
+            <input name="city" placeholder="City Name" id="cityIndex" type="text" />
+            <button type="submit" class="btn btn-primary" >Search</button>
+          </form>
           <div id="lastResults">
-            <button onclick="getData('Paris')">PArrrris</button>
+              <div class="suggestions"><button class="btn btn-primary" onclick="getData('New York')">New York</button></div>
+              <div class="suggestions"><button class="btn btn-primary" onclick="getData('Paris')">Paris</button></div>
+              <div class="suggestions"><button class="btn btn-primary" onclick="getData('Sydney')">Sydney</button></div>
+              <div class="suggestions"><button class="btn btn-primary" onclick="getData('London')">London</button></div>
           </div>
         </div>
         <div class="col-8">
           <div class="row">
             <h2 id="day"></h2>
             <h4 id="cityName"></h4>
+            <h4 id="cityWeather"></h4>
             <p id="cityTemp"></p>
             <p id="cityWind"></p>
             <p id="cityHumidity"></p>
